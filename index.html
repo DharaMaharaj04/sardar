@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Statue of Unity</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .highlight {
+      color: #7d8389;
+      font-weight: bold;
+    }
+    .transition-colors {
+      font-weight: bold;
+    }
+    .bg {
+      background-color: #7d8389;
+    }
+    .txt:hover {
+      color: #7d8389;
+    }
+    .gy {
+      color: #7d8389;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Header -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-3xl font-bold gy">Statue of Unity</h1>
+    <button id="menu-toggle" class="md:hidden text-[#b48460] focus:outline-none text-2xl">☰</button>
+    <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+      <a href="#overview" class="font-bold txt">Overview</a>
+      <a href="#architecture" class="font-bold txt">Architecture</a>
+      <a href="#construction" class="font-bold txt">Construction</a>
+      <a href="#visit" class="font-bold txt">Visit</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow text-sm font-semibold">
+    <a href="#overview" class="block font-bold txt">Overview</a>
+    <a href="#architecture" class="block font-bold txt">Architecture</a>
+    <a href="#construction" class="block font-bold txt">Construction</a>
+    <a href="#visit" class="block font-bold txt">Visit</a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-cover bg-center text-white py-32 px-4" style="background-image: url('https://wallpapercave.com/wp/wp6587235.jpg');">
+  <div class="bg-opacity-75 p-6 rounded-lg">
+    <h2 class="text-3xl md:text-5xl pt-10 font-bold" data-aos="fade-down">Statue of Unity</h2>
+    <p class="text-xl mt-4" data-aos="fade-up">A Monumental Tribute to Sardar Vallabhbhai Patel</p>
+  </div>
+</section>
+
+<!-- Overview -->
+<section id="overview" class="py-16 px-6 max-w-6xl mx-auto">
+  <div class="md:flex md:space-x-8" data-aos="fade-up">
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">Who Was Sardar Vallabhbhai Patel?</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        Known as the <strong>“Iron Man of India”</strong>, Sardar Vallabhbhai Patel was India’s first Deputy Prime Minister and Home Minister. He played a pivotal role in integrating <strong>562 princely states</strong> into the Indian Union post-independence.
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-lg">
+        <li>Symbol of Unity, Strength, and Leadership</li>
+        <li>Visionary and Strategic Administrator</li>
+        <li>Architect of Modern India's Political Unification</li>
+      </ul>
+    </div>
+    <div class="md:w-1/2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Statue_of_Unity.jpg/1200px-Statue_of_Unity.jpg" alt="Statue of Unity" class="rounded-lg shadow-lg">
+    </div>
+  </div>
+</section>
+
+<!-- Construction -->
+<section id="construction" class="py-16 bg-gray-100 px-6">
+  <div class="max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-center">Construction Details</h2>
+    <table class="w-full table-auto border-collapse border border-gray-300">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="border border-gray-300 px-4 py-2">Feature</th>
+          <th class="border border-gray-300 px-4 py-2">Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-4 py-2">Height</td><td class="border px-4 py-2">182 meters (597 ft) – Tallest statue in the world</td></tr>
+        <tr><td class="border px-4 py-2">Total Height (with base)</td><td class="border px-4 py-2">240 meters (790 ft)</td></tr>
+        <tr><td class="border px-4 py-2">Construction Period</td><td class="border px-4 py-2">2014–2018 (46 months)</td></tr>
+        <tr><td class="border px-4 py-2">Material Used</td><td class="border px-4 py-2">Steel, Cement, Bronze Cladding (1,700 tonnes)</td></tr>
+        <tr><td class="border px-4 py-2">Designer</td><td class="border px-4 py-2">Ram V. Sutar (Padma Bhushan awardee)</td></tr>
+        <tr><td class="border px-4 py-2">Built By</td><td class="border px-4 py-2">Larsen & Toubro (L&T)</td></tr>
+        <tr><td class="border px-4 py-2">Cost</td><td class="border px-4 py-2">Approx. ₹2,989 crore (US$420 million)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Architectural Highlights -->
+<section id="architecture" class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-center">Architectural Highlights</h2>
+  <div class="grid md:grid-cols-2 gap-6" data-aos="fade-up">
+    <ul class="list-disc pl-5 space-y-2 text-lg">
+      <li>Walking stance posture – symbol of leadership</li>
+      <li>Bronze alloy cladding assembled in China, mounted in India</li>
+      <li>Wind and earthquake resistant design (up to 180 km/h)</li>
+      <li>Viewing gallery at 153 meters offers panoramic views</li>
+    </ul>
+    <img src="https://www.savaari.com/blog/wp-content/uploads/2023/08/shutterstock_1398482867-1.jpg" alt="Statue of Unity Architecture" class="rounded-lg shadow-lg">
+  </div>
+</section>
+
+<!-- Visit Info -->
+<section id="visit" class="py-16 bg-gray-100 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Visit Information</h2>
+    <table class="w-full table-auto border-collapse border border-gray-300">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="border border-gray-300 px-4 py-2">Detail</th>
+          <th class="border border-gray-300 px-4 py-2">Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-4 py-2">Location</td><td class="border px-4 py-2">Kevadia, Gujarat (Near Sardar Sarovar Dam)</td></tr>
+        <tr><td class="border px-4 py-2">Surroundings</td><td class="border px-4 py-2">Satpura & Vindhya Ranges</td></tr>
+        <tr><td class="border px-4 py-2">Best Time to Visit</td><td class="border px-4 py-2">November to February (Winter months)</td></tr>
+        <tr><td class="border px-4 py-2">Facilities</td><td class="border px-4 py-2">Museum, Valley of Flowers, Boating, Hotels</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg text-white py-6 text-center">
+  <p class="text-lg">Honoring National Unity | Inspired by Sardar Vallabhbhai Patel</p>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  toggleButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
